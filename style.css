@@ -1,0 +1,64 @@
+/* Custom Styles para The Authentic Mexican Flavors */
+
+/* Fundo do Hero Section com efeito Parallax e Filtro Escuro */
+.hero-bg {
+    background-color: #1B1B1B;
+    background-image: url(assets/img/DSC_5910-1.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Efeito Parallax premium */
+}
+
+/* Borda de texto customizada para o Título Principal */
+.text-stroke-custom {
+    -webkit-text-stroke: 22px #F52F1B;
+    /* Borda vermelha */
+    paint-order: stroke fill;
+    /* Garante que a borda fique externa quando suportado */
+}
+
+/* Padrão Geométrico Tradicional (Movido para tag img com SVG externo no HTML) */
+
+/* Esconder barra de rolagem no Slider Mobile */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Animação suave para Links do Menu Mobile */
+#mobile-menu a {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+#mobile-menu.flex a {
+    animation: fadeUp 0.4s forwards ease-out;
+}
+
+#mobile-menu.flex a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#mobile-menu.flex a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#mobile-menu.flex a:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#mobile-menu.flex a:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
