@@ -37,7 +37,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ruda:wght@400;700;900&family=Caprasimo&display=swap"
         rel="stylesheet">
     <!-- Phosphor Icons para ícones rápidos e modernos -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -161,7 +163,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-starters.png" alt="Starters"
+                        <img src="assets/img/menu-starters.webp" alt=""
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -176,7 +178,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-main-dishes.png" alt="Main Dishes"
+                        <img src="assets/img/menu-main-dishes.webp" alt=""
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full relative">
@@ -194,7 +196,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-sandwiches.png" alt="Sandwiches"
+                        <img src="assets/img/menu-sandwiches.webp" alt=""
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -209,7 +211,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-side-dishes.png" alt="Side Dishes"
+                        <img src="assets/img/menu-side-dishes.webp" alt=""
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -224,7 +226,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-drinks.png" alt="Drinks"
+                        <img src="assets/img/menu-drinks.webp" alt=""
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -239,7 +241,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer pb-2 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-desserts.png" alt="Desserts"
+                        <img src="assets/img/menu-desserts.png" alt=""
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -348,12 +350,12 @@
             </div>
 
             <!-- Pontos de Paginação -->
-            <div class="flex justify-center gap-3 mt-4 mb-12">
-                <button
-                    class="slider-dot w-2.5 h-2.5 rounded-full bg-mex-red transition-all duration-300 scale-125"></button>
-                <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
-                <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
-                <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
+            <div class="flex justify-center gap-5 mt-4 mb-12">
+                <button aria-label="Go to slide 1"
+                    class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-mex-red transition-all duration-300 scale-125"></button>
+                <button aria-label="Go to slide 2" class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
+                <button aria-label="Go to slide 3" class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
+                <button aria-label="Go to slide 4" class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
             </div>
 
             <a href="#contact"
