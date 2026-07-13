@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Authentic Mexican Flavors</title>
     <!-- Tailwind CSS (via CDN for rapid development without build step) -->
-    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -37,9 +37,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ruda:wght@400;700;900&family=Caprasimo&display=swap"
         rel="stylesheet">
     <!-- Phosphor Icons para ícones rápidos e modernos -->
-        <link rel="stylesheet" href="assets/css/phosphor/regular.css">
-    <link rel="stylesheet" href="assets/css/phosphor/bold.css">
-    <link rel="stylesheet" href="assets/css/phosphor/fill.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -73,7 +71,7 @@
             </nav>
 
             <!-- Mobile Nav Button -->
-            <button id="menu-btn" aria-label="Toggle mobile menu" class="md:hidden text-white text-3xl focus:outline-none z-50">
+            <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none z-50">
                 <i class="ph ph-list"></i>
             </button>
         </header>
@@ -163,7 +161,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-starters.webp" alt=""
+                        <img src="assets/img/menu-starters.png" alt="Starters"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -178,7 +176,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-main-dishes.webp" alt=""
+                        <img src="assets/img/menu-main-dishes.png" alt="Main Dishes"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full relative">
@@ -196,7 +194,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-sandwiches.webp" alt=""
+                        <img src="assets/img/menu-sandwiches.png" alt="Sandwiches"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -211,7 +209,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-side-dishes.webp" alt=""
+                        <img src="assets/img/menu-side-dishes.png" alt="Side Dishes"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -226,7 +224,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-drinks.webp" alt=""
+                        <img src="assets/img/menu-drinks.png" alt="Drinks"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -241,7 +239,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer pb-2 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-desserts.png" alt=""
+                        <img src="assets/img/menu-desserts.png" alt="Desserts"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -350,12 +348,12 @@
             </div>
 
             <!-- Pontos de Paginação -->
-            <div class="flex justify-center gap-5 mt-4 mb-12">
-                <button aria-label="Go to slide 1"
-                    class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-mex-red transition-all duration-300 scale-125"></button>
-                <button aria-label="Go to slide 2" class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
-                <button aria-label="Go to slide 3" class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
-                <button aria-label="Go to slide 4" class="slider-dot relative before:absolute before:-inset-5 before:content-[''] w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
+            <div class="flex justify-center gap-3 mt-4 mb-12">
+                <button
+                    class="slider-dot w-2.5 h-2.5 rounded-full bg-mex-red transition-all duration-300 scale-125"></button>
+                <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
+                <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
+                <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300"></button>
             </div>
 
             <a href="#contact"
