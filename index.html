@@ -11,8 +11,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ruda:wght@400;700;900&family=Caprasimo&display=swap"
         rel="stylesheet">
-    <!-- Phosphor Icons para ícones rápidos e modernos -->
-    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" href="assets/css/phosphor/regular.css">
+    <link rel="stylesheet" href="assets/css/phosphor/bold.css">
+    <link rel="stylesheet" href="assets/css/phosphor/fill.css">
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -126,8 +128,8 @@
 
     <!-- Fita com Padrão Geométrico -->
     <div class="w-full">
-        <img src="assets/img/pattern-mobile.svg" alt="Padrão Geométrico Mobile" class="w-full h-auto md:hidden">
-        <img src="assets/img/pattern.svg" alt="Padrão Geométrico" class="w-full h-auto hidden md:block">
+        <img src="assets/img/pattern-mobile.svg" alt="Padrão Geométrico Mobile" width="800" height="40" class="w-full h-auto md:hidden">
+        <img src="assets/img/pattern.svg" alt="Padrão Geométrico" width="1440" height="32" class="w-full h-auto hidden md:block">
     </div>
 
     <!-- Our Menu -->
@@ -145,7 +147,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-starters.webp" alt="Starters"
+                        <img src="assets/img/menu-starters.webp" alt="Starters" width="400" height="400"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -160,7 +162,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-main-dishes.webp" alt="Main Dishes"
+                        <img src="assets/img/menu-main-dishes.webp" alt="Main Dishes" width="400" height="400"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full relative">
@@ -178,7 +180,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-sandwiches.webp" alt="Sandwiches"
+                        <img src="assets/img/menu-sandwiches.webp" alt="Sandwiches" width="400" height="400"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -193,7 +195,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-side-dishes.webp" alt="Side Dishes"
+                        <img src="assets/img/menu-side-dishes.webp" alt="Side Dishes" width="400" height="400"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -208,7 +210,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer border-b border-gray-100 md:border-none pb-6 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-drinks.webp" alt="Drinks"
+                        <img src="assets/img/menu-drinks.webp" alt="Drinks" width="400" height="400"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -223,7 +225,7 @@
                     class="flex flex-row md:flex-col items-center md:justify-start group cursor-pointer pb-2 md:pb-0 gap-6 md:gap-0">
                     <div
                         class="w-32 h-32 md:w-56 md:h-56 shrink-0 md:mb-6 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                        <img src="assets/img/menu-desserts.webp" alt="Desserts"
+                        <img src="assets/img/menu-desserts.webp" alt="Desserts" width="400" height="400"
                             class="w-full h-full object-contain drop-shadow-lg">
                     </div>
                     <div class="flex flex-col items-start md:items-center text-left md:text-center w-full">
@@ -237,9 +239,9 @@
     </section>
 
     <!-- Transição de Papel Picado (Bandeirinhas) -->
-    <div class="w-full pointer-events-none">
-        <img src="assets/img/bunting-flags-mobile.svg" alt="Bandeirinhas Mobile" class="w-full h-auto md:hidden">
-        <img src="assets/img/bunting-flags.svg" alt="Bandeirinhas" class="w-full h-auto hidden md:block">
+    <div class="w-full -mt-2 md:-mt-4 z-20 relative">
+        <img src="assets/img/bunting-flags-mobile.svg" alt="Bandeirinhas Mobile" width="800" height="60" class="w-full h-auto md:hidden">
+        <img src="assets/img/bunting-flags.svg" alt="Bandeirinhas" width="1440" height="80" class="w-full h-auto hidden md:block">
     </div>
 
     <!-- What Our Customers Say (Depoimentos) -->
@@ -348,9 +350,9 @@
     </section>
 
     <!-- Fita com Padrão Geométrico -->
-    <div class="w-full">
-        <img src="assets/img/pattern-mobile.svg" alt="Padrão Geométrico Mobile" class="w-full h-auto md:hidden">
-        <img src="assets/img/pattern.svg" alt="Padrão Geométrico" class="w-full h-auto hidden md:block">
+    <div class="w-full relative z-20 -mt-[1px]">
+        <img src="assets/img/pattern-mobile.svg" alt="Padrão Geométrico Mobile" width="800" height="40" class="w-full h-auto md:hidden">
+        <img src="assets/img/pattern.svg" alt="Padrão Geométrico" width="1440" height="32" class="w-full h-auto hidden md:block">
     </div>
 
     <!-- FAQ Section -->
@@ -483,15 +485,15 @@
                 <h4 class="font-sans font-bold text-sm md:text-lg mb-4 md:mb-6 tracking-wider uppercase">Follow Us</h4>
                 <div class="flex flex-nowrap gap-1.5 md:gap-4">
                     <a href="#" class="hover:-translate-y-1 transform transition-transform duration-300">
-                        <img src="assets/img/icon-youtube.svg" alt="YouTube"
+                        <img src="assets/img/icon-youtube.svg" alt="YouTube" width="40" height="40"
                             class="w-6 h-6 md:w-10 md:h-10 object-contain shrink-0">
                     </a>
                     <a href="#" class="hover:-translate-y-1 transform transition-transform duration-300">
-                        <img src="assets/img/icon-instagram.svg" alt="Instagram"
+                        <img src="assets/img/icon-instagram.svg" alt="Instagram" width="40" height="40"
                             class="w-6 h-6 md:w-10 md:h-10 object-contain shrink-0">
                     </a>
                     <a href="#" class="hover:-translate-y-1 transform transition-transform duration-300">
-                        <img src="assets/img/icon-facebook.svg" alt="Facebook"
+                        <img src="assets/img/icon-facebook.svg" alt="Facebook" width="40" height="40"
                             class="w-6 h-6 md:w-10 md:h-10 object-contain shrink-0">
                     </a>
                 </div>
