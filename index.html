@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Authentic Mexican Flavors</title>
     <!-- Tailwind CSS (via CDN for rapid development without build step) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -37,9 +37,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ruda:wght@400;700;900&family=Caprasimo&display=swap"
         rel="stylesheet">
     <!-- Phosphor Icons para ícones rápidos e modernos -->
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+        <link rel="stylesheet" href="assets/css/phosphor/regular.css">
+    <link rel="stylesheet" href="assets/css/phosphor/bold.css">
+    <link rel="stylesheet" href="assets/css/phosphor/fill.css">
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -73,7 +73,7 @@
             </nav>
 
             <!-- Mobile Nav Button -->
-            <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none z-50">
+            <button id="menu-btn" aria-label="Toggle mobile menu" class="md:hidden text-white text-3xl focus:outline-none z-50">
                 <i class="ph ph-list"></i>
             </button>
         </header>
