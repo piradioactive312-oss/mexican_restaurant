@@ -5,31 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Authentic Mexican Flavors</title>
-    <!-- Tailwind CSS (via CDN for rapid development without build step) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'mex-yellow': '#FFB200',
-                        'mex-green': '#015536',
-                        'mex-red': '#F52F1B',
-                        'mex-dark': '#1B1B1B',
-                    },
-                    fontFamily: {
-                        display: ['Caprasimo', 'cursive'], // Fallback decorativa
-                        sans: ['Ruda', 'sans-serif'], // Usado para títulos (black)
-                        body: ['Montserrat', 'sans-serif'], // Usado para textos normais
-                    },
-                    boxShadow: {
-                        'card': '-10.276px 10.276px 0 0 #D72022',
-                        'circle': '0 15px 25px -5px rgba(0, 0, 0, 0.2)',
-                    }
-                }
-            }
-        }
-    </script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ruda:wght@400;700;900&family=Caprasimo&display=swap"
         rel="stylesheet">
     <!-- Phosphor Icons para ícones rápidos e modernos -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
     <!-- CSS Customizado -->
     <link rel="stylesheet" href="style.css">
 </head>
