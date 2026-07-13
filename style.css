@@ -62,3 +62,19 @@
         opacity: 1;
     }
 }
+
+/* Aumentar a área de toque (tap target) dos botões do slider para acessibilidade */
+.slider-dot {
+    position: relative;
+}
+
+.slider-dot::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
