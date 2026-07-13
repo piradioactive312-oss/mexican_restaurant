@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Authentic Mexican Flavors</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mex-yellow': '#FFB200',
+                        'mex-green': '#015536',
+                        'mex-red': '#F52F1B',
+                        'mex-dark': '#1B1B1B',
+                    },
+                    fontFamily: {
+                        display: ['Caprasimo', 'cursive'],
+                        sans: ['Ruda', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '-10.276px 10.276px 0 0 #D72022',
+                        'circle': '0 15px 25px -5px rgba(0, 0, 0, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ruda:wght@400;700;900&family=Caprasimo&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-body text-mex-dark bg-white antialiased overflow-x-hidden">
+
+    <!-- Yellow Hero Section -->
+    <section class="relative bg-mex-yellow flex flex-col items-center justify-start pb-20 z-10">
+
+        <!-- Navegação (Solid Background variant) -->
+        <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-20">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/img/logo.svg" alt="The Authentic Mexican Flavors Logo"
+                    class="h-14 md:h-16 object-contain">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html#menu"
+                    class="text-white font-sans font-bold uppercase text-sm tracking-widest hover:text-white/80 transition-colors">Menu</a>
+                <a href="index.html#about"
+                    class="text-white font-sans font-bold uppercase text-sm tracking-widest hover:text-white/80 transition-colors">About
+                    Us</a>
+                <a href="index.html#ratings"
+                    class="text-white font-sans font-bold uppercase text-sm tracking-widest hover:text-white/80 transition-colors">Ratings</a>
+                <a href="index.html#find-us"
+                    class="text-white font-sans font-bold uppercase text-sm tracking-widest hover:text-white/80 transition-colors">Find
+                    Us</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white text-3xl hover:text-white/80 transition-colors" aria-label="Open Menu">
+                <i class="ph-bold ph-list"></i>
+            </button>
+        </header>
+
+        <!-- Hero Content -->
+        <div
+            class="relative w-full max-w-4xl mx-auto flex flex-col items-center justify-center pt-8 md:pt-16 pb-12 px-6">
+            <!-- Faded Taco Vector -->
+            <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+                <img src="assets/img/Simplification.svg" alt="Taco Background"
+                    class="w-64 h-64 md:w-96 md:h-96 object-contain">
+            </div>
+
+            <h1
+                class="font-sans font-black text-mex-green text-5xl md:text-6xl text-center uppercase tracking-wide relative z-10">
+                Main Dishes
+            </h1>
+            <p class="font-body text-mex-dark text-center mt-4 text-base md:text-lg max-w-lg relative z-10 font-medium">
+                Hearty, authentic, and crafted with passion.<br>Experience the true taste of Mexico.
+            </p>
+        </div>
+
+        <!-- Borda Arredondada (Scalloped) apontando para baixo -->
+        <div class="absolute bottom-0 left-0 w-full h-[20px] transform translate-y-[calc(100%-1px)]"
+            style="background-image: radial-gradient(circle at 50% 0, #FFB200 20px, rgba(255, 178, 0, 0) 20.5px); background-size: 40px 20px; background-repeat: repeat-x;">
+        </div>
+    </section>
+
+    <!-- Menu Details Content -->
+    <main class="py-24 bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Category: Typical Mexican Dishes -->
+            <div class="flex items-center justify-center gap-4 md:gap-8 mb-12 mt-12 first:mt-0">
+                <img src="assets/img/red-ornament.svg" alt="" class="h-6 md:h-8 object-contain">
+                <h2
+                    class="font-sans font-black text-xl md:text-3xl text-mex-dark uppercase tracking-widest text-center whitespace-nowrap">
+                    Typical Mexican Dishes</h2>
+                <img src="assets/img/red-ornament.svg" alt="" class="h-6 md:h-8 object-contain transform rotate-180">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 mb-24">
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Huaraches</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">From $15</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Frango $15.00 &bull; Carne de Boi
+                        $16.00</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Chalupas</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">From $13</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Frango $13.00 &bull; Carne de Boi
+                        $14.00</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Tostadas</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">From $10</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Simples $10.00 &bull; Frango $13.00
+                        &bull; Carne de Boi $15.00</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Sopes</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">From $14</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Simples $14.00 &bull; Frango $15.00
+                        &bull; Carne de Boi $16.00</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Quesadillas
+                            (Milho)</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$13</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Quesillo</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Quesadillas
+                            y Pollo (Milho)</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$14</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Quesillo y Pollo</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Quesadilla
+                            (Trigo)</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$13</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Tortilla de Harina</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Quesadilla
+                            y Pollo (Trigo)</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$14</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Tortilla de Harina y Pollo</span>
+                </div>
+
+            </div>
+
+
+            <!-- Category: 3 Tacos Order -->
+            <div class="flex items-center justify-center gap-4 md:gap-8 mb-12 mt-16">
+                <img src="assets/img/red-ornament.svg" alt="" class="h-6 md:h-8 object-contain">
+                <h2
+                    class="font-sans font-black text-xl md:text-3xl text-mex-dark uppercase tracking-widest text-center whitespace-nowrap">
+                    Tacos Order</h2>
+                <img src="assets/img/red-ornament.svg" alt="" class="h-6 md:h-8 object-contain transform rotate-180">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 mb-24">
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Carnitas,
+                            Pollo o Res</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">From $11</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Frango $11.00 &bull; Carne de Boi
+                        $15.00</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Cecina</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$11</span>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Lengua
+                            (Língua)</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$15</span>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Carne
+                            Enchilada</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$11</span>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Chorizo</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$11</span>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Carne
+                            Molida</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$11</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">Carne Moída</span>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Al
+                            Pastor</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$11</span>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Tacos
+                            Mixtos</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">$15</span>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="flex flex-col">
+                    <div class="flex items-baseline w-full">
+                        <span
+                            class="font-sans font-bold text-mex-dark uppercase tracking-wide text-sm md:text-base">Birria
+                            Tacos</span>
+                        <div class="flex-grow border-b-2 border-dotted border-mex-red mx-4 relative top-[-4px]"></div>
+                        <span class="font-sans font-black text-mex-dark md:text-lg">From $17</span>
+                    </div>
+                    <span class="font-body text-xs text-gray-500 mt-1 font-medium">3 unidades $17.00 &bull; 4 unidades
+                        $20.00</span>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-mex-green rounded-t-[3rem] text-white pt-20 pb-8 px-6 mt-12">
+        <div class="max-w-6xl mx-auto grid grid-cols-3 gap-4 md:gap-8 mb-16 text-left">
+            <!-- Links -->
+            <div>
+                <h4 class="font-sans font-bold text-sm md:text-lg mb-4 md:mb-6 tracking-wider uppercase">Links</h4>
+                <ul class="font-body space-y-3 md:space-y-4 text-xs md:text-sm text-gray-200">
+                    <li><a href="index.html#menu" class="hover:text-mex-yellow transition-colors block">Menu</a></li>
+                    <li><a href="index.html#contact" class="hover:text-mex-yellow transition-colors block">Contact</a>
+                    </li>
+                    <li><a href="index.html#about" class="hover:text-mex-yellow transition-colors block">About Us</a>
+                    </li>
+                    <li><a href="index.html#ratings" class="hover:text-mex-yellow transition-colors block">Ratings</a>
+                    </li>
+                    <li><a href="index.html#find-us" class="hover:text-mex-yellow transition-colors block">Location &
+                            Hours</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div>
+                <h4 class="font-sans font-bold text-sm md:text-lg mb-4 md:mb-6 tracking-wider uppercase">Legal</h4>
+                <ul class="font-body space-y-3 md:space-y-4 text-xs md:text-sm text-gray-200">
+                    <li><a href="#" class="hover:text-mex-yellow transition-colors block">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-mex-yellow transition-colors block">Terms of Use</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="flex flex-col items-start">
+                <h4 class="font-sans font-bold text-sm md:text-lg mb-4 md:mb-6 tracking-wider uppercase">Follow Us</h4>
+                <div class="flex flex-nowrap gap-1.5 md:gap-4">
+                    <a href="#" class="hover:-translate-y-1 transform transition-transform duration-300">
+                        <img src="assets/img/icon-youtube.svg" alt="YouTube"
+                            class="w-6 h-6 md:w-10 md:h-10 object-contain shrink-0">
+                    </a>
+                    <a href="#" class="hover:-translate-y-1 transform transition-transform duration-300">
+                        <img src="assets/img/icon-instagram.svg" alt="Instagram"
+                            class="w-6 h-6 md:w-10 md:h-10 object-contain shrink-0">
+                    </a>
+                    <a href="#" class="hover:-translate-y-1 transform transition-transform duration-300">
+                        <img src="assets/img/icon-facebook.svg" alt="Facebook"
+                            class="w-6 h-6 md:w-10 md:h-10 object-contain shrink-0">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="max-w-6xl mx-auto border-t border-white/20 pt-8 text-center">
+            <p class="font-body text-sm text-gray-300 font-medium tracking-wide">
+                Website developed by <a href="#"
+                    class="text-white hover:text-mex-yellow underline decoration-gray-400 underline-offset-4 transition-colors">Pedro
+                    Sampaio</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script Customizado -->
+    <script src="script.js"></script>
+</body>
+
+</html>
