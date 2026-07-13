@@ -82,3 +82,12 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+/* Prevenir CLS (Troca de Layout) enquanto os ícones Phosphor carregam de forma assíncrona */
+i[class^="ph"], i[class*=" ph-"] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    vertical-align: middle;
+}
